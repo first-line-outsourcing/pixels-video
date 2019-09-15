@@ -1,0 +1,24 @@
+<div class="message">
+  Sorry, your browser does not support CSS Grid. 😅
+</div>
+<section class="section">
+  <div class="header">
+    <h1>Awesome Gallery</h1>
+    <div class="form">
+      <input type="text" [formControl]="term" placeholder="Search at Unsplash">
+    </div>
+  </div>
+
+  <div class="grid" infiniteScroll
+       [infiniteScrollDistance]="2"
+       [infiniteScrollThrottle]="50"
+       (scrolled)="onScroll()">
+    <div *ngFor="let image of images" class="item"
+         [ngClass]="{ 'item--medium': image.width >= image.height, 'item--large': image.width < image.height }"
+         [ngStyle]="{ backgroundImage: 'url(' + image.urls.small + ')' }">
+      <div class="item__details">
+        {{image.description || image.alt_description}}
+      </div>
+    </div>
+  </div>
+</section>
