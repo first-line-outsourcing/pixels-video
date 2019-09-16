@@ -14,11 +14,11 @@
 * written permission of Adobe.
 **************************************************************************/
 -->
-<ExtensionManifest Version="9.0" ExtensionBundleId="com.adobe.pexelsvideo" ExtensionBundleVersion="1.0"
-                   ExtensionBundleName="CEP Images"
+<ExtensionManifest Version="9.0" ExtensionBundleId="com.adobe.pixelsvideo" ExtensionBundleVersion="1.0"
+                   ExtensionBundleName="Pixels Video"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExtensionList>
-    <Extension Id="com.adobe.pexelsvideo" Version="1.0" />
+    <Extension Id="com.adobe.pixelsvideo" Version="1.0" />
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
@@ -33,7 +33,7 @@
   </ExecutionEnvironment>
 
   <DispatchInfoList>
-    <Extension Id="com.adobe.pexelsvideo">
+    <Extension Id="com.adobe.pixelsvideo">
       <DispatchInfo>
         <Resources>
           <MainPath>./dist/index.html</MainPath>

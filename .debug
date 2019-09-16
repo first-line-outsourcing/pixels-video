@@ -2,7 +2,7 @@
 <ExtensionList>
     <Extension Id="com.adobe.pixelsvideo">
         <HostList>
-            <Host Name="PPRO" Port="1112"/>
+            <Host Name="PPRO" Port="1111"/>
         </HostList>
     </Extension>
 </ExtensionList>
